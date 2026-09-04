@@ -1,0 +1,582 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CareerLens AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+<!-- GLOBAL NAV -->
+<nav class="lp-nav">
+  <div class="lp-nav-logo">
+    <div class="logo-mark">CL</div>
+    <span class="lp-nav-name">CareerLens AI</span>
+  </div>
+  <button class="lp-nav-cta lp-cta-trigger" id="lp-nav-cta">Get Started Free</button>
+</nav>
+
+<!-- ══════════════ LANDING PAGE ══════════════ -->
+<div id="landing-page">
+  <div class="lp-bg-grid"></div>
+  <div id="lp-progress-bar"></div>
+  <div id="lp-cursor-glow"></div>
+
+  <!-- HERO -->
+  <section class="lp-hero">
+    <div class="lp-glow-top" id="lp-glow"></div>
+    <div class="lp-beam" id="lp-beam"></div>
+    <div class="lp-badge">
+      <span class="lp-badge-dot"></span>
+      AI-Powered Career Coaching
+    </div>
+    <h1 class="lp-title">Your resume is<br><span class="lp-title-accent">costing you interviews.</span></h1>
+    <p class="lp-sub">CareerLens scores your resume in seconds, finds exactly what's holding you back, and rewrites it with AI — tailored to the role you actually want.</p>
+    <div class="lp-hero-actions">
+      <button class="lp-cta lp-cta-trigger" id="lp-cta-btn">
+        Upload Your Resume — It's Free
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+        </svg>
+      </button>
+      <p class="lp-footnote">No signup · No credit card · Results in under 2 minutes</p>
+    </div>
+
+    <!-- Preview cards -->
+    <div class="lp-preview-wrap">
+      <div class="lp-preview-fade"></div>
+      <div class="lp-preview">
+        <div class="lp-preview-card lp-card-left">
+          <div class="lp-pc-label">Resume Score</div>
+          <div class="lp-pc-score">87</div>
+          <div class="lp-pc-verdict" style="color:#10b981">Strong Match</div>
+          <div class="lp-pc-tags" style="margin-top:10px">
+            <span>React</span><span>Python</span><span>SQL</span>
+          </div>
+        </div>
+        <div class="lp-preview-card lp-card-center">
+          <div class="lp-pc-label">AI Feedback</div>
+          <div class="lp-pc-msg">Your resume shows strong technical skills. Quantify achievements with metrics — e.g. "reduced load time by 40%" — to stand out.</div>
+          <div class="lp-pc-input-mock">Ask me anything about your career...</div>
+        </div>
+        <div class="lp-preview-card lp-card-right">
+          <div class="lp-pc-label">AI Tools</div>
+          <div class="lp-pc-tool">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            Improve Resume
+          </div>
+          <div class="lp-pc-tool">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            Cover Letter
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <section class="lp-stats-bar">
+    <div class="lp-stats-inner">
+      <div class="lp-stat">
+        <div class="lp-stat-num">2 min</div>
+        <div class="lp-stat-label">Average analysis time</div>
+      </div>
+      <div class="lp-stat-divider"></div>
+      <div class="lp-stat">
+        <div class="lp-stat-num">10+</div>
+        <div class="lp-stat-label">Skills identified per resume</div>
+      </div>
+      <div class="lp-stat-divider"></div>
+      <div class="lp-stat">
+        <div class="lp-stat-num">3 tools</div>
+        <div class="lp-stat-label">Score · Improve · Cover letter</div>
+      </div>
+      <div class="lp-stat-divider"></div>
+      <div class="lp-stat">
+        <div class="lp-stat-num">Free</div>
+        <div class="lp-stat-label">No account required</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="lp-section">
+    <div class="lp-section-inner">
+      <div class="lp-section-eyebrow">How It Works</div>
+      <h2 class="lp-section-title">From upload to offer-ready<br>in three steps.</h2>
+      <div class="lp-steps">
+        <div class="lp-step">
+          <div class="lp-step-num">01</div>
+          <div class="lp-step-body">
+            <div class="lp-step-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+            </div>
+            <div class="lp-step-title">Upload your resume</div>
+            <div class="lp-step-desc">Drop your PDF in seconds. No forms, no sign-up, no friction. We extract everything automatically.</div>
+          </div>
+        </div>
+        <div class="lp-step-connector"></div>
+        <div class="lp-step">
+          <div class="lp-step-num">02</div>
+          <div class="lp-step-body">
+            <div class="lp-step-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="lp-step-title">Get your score instantly</div>
+            <div class="lp-step-desc">A 0–100 score with a plain-English verdict, your detected skills, and actionable feedback — not generic advice.</div>
+          </div>
+        </div>
+        <div class="lp-step-connector"></div>
+        <div class="lp-step">
+          <div class="lp-step-num">03</div>
+          <div class="lp-step-body">
+            <div class="lp-step-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <div class="lp-step-title">Let AI rewrite it</div>
+            <div class="lp-step-desc">Enter your target role and get a fully rewritten, recruiter-optimized resume and tailored cover letter in one click.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="lp-section lp-section-alt">
+    <div class="lp-section-inner">
+      <div class="lp-section-eyebrow">Features</div>
+      <h2 class="lp-section-title">Everything your career<br>needs in one place.</h2>
+      <div class="lp-features">
+        <div class="lp-feature-card">
+          <div class="lp-feat-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="9 11 12 14 22 4"/></svg>
+          </div>
+          <div class="lp-feat-title">Resume Scoring</div>
+          <div class="lp-feat-desc">Instantly rated 0–100 with a human-readable verdict. Know exactly where you stand before you apply.</div>
+        </div>
+        <div class="lp-feature-card">
+          <div class="lp-feat-icon lp-feat-icon-yellow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <div class="lp-feat-title">AI Resume Rewrite</div>
+          <div class="lp-feat-desc">Paste your target role. Get a side-by-side comparison of your original vs. an AI-polished version you can copy instantly.</div>
+        </div>
+        <div class="lp-feature-card">
+          <div class="lp-feat-icon lp-feat-icon-green">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <div class="lp-feat-title">Cover Letter Generator</div>
+          <div class="lp-feat-desc">Paste the job description, get a tailored cover letter that matches your resume to the role — not a generic template.</div>
+        </div>
+        <div class="lp-feature-card">
+          <div class="lp-feat-icon lp-feat-icon-pink">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <div class="lp-feat-title">Career Chat</div>
+          <div class="lp-feat-desc">Ask anything — salary ranges, skill gaps, interview prep, career pivots. AI that actually knows your background.</div>
+        </div>
+        <div class="lp-feature-card">
+          <div class="lp-feat-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div class="lp-feat-title">Skill Gap Analysis</div>
+          <div class="lp-feat-desc">We surface every skill on your resume and flag what you're missing for the roles you're targeting.</div>
+        </div>
+        <div class="lp-feature-card">
+          <div class="lp-feat-icon lp-feat-icon-yellow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <div class="lp-feat-title">Remote Job Insights</div>
+          <div class="lp-feat-desc">Ask which companies are hiring remotely right now in your field. Real intelligence, not just job board links.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="lp-section">
+    <div class="lp-section-inner">
+      <div class="lp-section-eyebrow">Testimonials</div>
+      <h2 class="lp-section-title">People landing jobs<br>with CareerLens.</h2>
+      <div class="lp-testimonials">
+        <div class="lp-testimonial">
+          <div class="lp-testi-stars">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="lp-testi-text">"I uploaded my resume, got a 61 score and honest feedback. The AI rewrite bumped it to an 88. Got my first callback the following week."</p>
+          <div class="lp-testi-author">
+            <div class="lp-testi-avatar">MK</div>
+            <div>
+              <div class="lp-testi-name">Marcus K.</div>
+              <div class="lp-testi-role">Software Engineer</div>
+            </div>
+          </div>
+        </div>
+        <div class="lp-testimonial">
+          <div class="lp-testi-stars">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="lp-testi-text">"The cover letter generator is insane. I pasted the JD, it read my resume, and produced something that actually sounded like me. Hired in 3 weeks."</p>
+          <div class="lp-testi-author">
+            <div class="lp-testi-avatar" style="background:rgba(16,185,129,0.15);color:#10b981;border-color:rgba(16,185,129,0.25)">SR</div>
+            <div>
+              <div class="lp-testi-name">Sofia R.</div>
+              <div class="lp-testi-role">Product Manager</div>
+            </div>
+          </div>
+        </div>
+        <div class="lp-testimonial">
+          <div class="lp-testi-stars">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="lp-testi-text">"I've been applying for 4 months with no response. CareerLens told me exactly what was wrong. Fixed it. Three interviews in the next two weeks."</p>
+          <div class="lp-testi-author">
+            <div class="lp-testi-avatar" style="background:rgba(244,63,94,0.12);color:#f43f5e;border-color:rgba(244,63,94,0.2)">DJ</div>
+            <div>
+              <div class="lp-testi-name">Daniel J.</div>
+              <div class="lp-testi-role">Data Analyst</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="lp-final-cta">
+    <div class="lp-final-glow"></div>
+    <div class="lp-final-inner">
+      <h2 class="lp-final-title">Stop guessing.<br>Start getting hired.</h2>
+      <p class="lp-final-sub">Upload your resume now and find out exactly what's standing between you and your next role.</p>
+      <button class="lp-cta lp-cta-trigger">
+        Analyze My Resume Now
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+        </svg>
+      </button>
+      <p class="lp-footnote">Free · No account · 2 minutes</p>
+    </div>
+  </section>
+
+</div>
+
+<div id="toast-container"></div>
+
+<!-- Mobile header -->
+<header class="mobile-header">
+  <div class="mobile-logo">
+    <div class="logo-mark">CL</div>
+    <span>CareerLens</span>
+  </div>
+  <button class="menu-btn" id="fab-toggle" aria-label="Toggle sidebar">
+    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+    </svg>
+  </button>
+</header>
+
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+<!-- SIDEBAR -->
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+
+    <div class="sidebar-logo">
+      <div class="logo-mark">CL</div>
+      <div>
+        <div class="logo-title">CareerLens</div>
+        <div class="logo-sub">AI Career Coach</div>
+      </div>
+    </div>
+
+    <button class="new-chat-btn" id="new-chat-btn">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+        <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+      </svg>
+      New Chat
+    </button>
+
+    <div class="chat-history-section">
+      <div class="nav-section-title">Recent Chats</div>
+      <div class="chat-history-list" id="chat-history-list"></div>
+    </div>
+
+    <!-- Resume -->
+    <div class="nav-section">
+      <div class="nav-section-title">Resume</div>
+      <div class="upload-zone" id="upload-zone">
+        <input type="file" id="file-input" accept=".pdf" hidden />
+        <div class="upload-zone-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <line x1="12" y1="18" x2="12" y2="12"/>
+            <line x1="9" y1="15" x2="15" y2="15"/>
+          </svg>
+        </div>
+        <div>
+          <div class="upload-title" id="upload-title">Upload Resume</div>
+          <div class="upload-hint">PDF Â· Max 10MB</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Score card -->
+    <div class="score-card" id="score-section" style="display:none">
+      <div class="score-row">
+        <div class="score-ring-wrap">
+          <svg class="score-ring" viewBox="0 0 100 100">
+            <circle class="ring-bg" cx="50" cy="50" r="40"/>
+            <circle class="ring-fill" id="ring-fill" cx="50" cy="50" r="40"
+              stroke-dasharray="251.2" stroke-dashoffset="251.2"/>
+          </svg>
+          <div class="score-center">
+            <div class="score-number" id="score-number">0</div>
+            <div class="score-label">Score</div>
+          </div>
+        </div>
+        <div class="score-info">
+          <div class="score-filename" id="resume-name"></div>
+          <div class="score-verdict" id="score-verdict"></div>
+        </div>
+      </div>
+      <div class="skills-wrap" id="skills-list"></div>
+      <div class="feedback-wrap" id="feedback-list"></div>
+    </div>
+
+    <!-- AI Tools -->
+    <div class="nav-section" id="actions-label" style="display:none">
+      <div class="nav-section-title">AI Tools</div>
+      <div class="tool-list" id="action-buttons" style="display:none">
+        <button class="tool-item tool-item-accent" id="btn-improve">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          </svg>
+          Improve Resume
+        </button>
+        <div class="inline-input-wrap" id="improve-input-wrap" style="display:none">
+          <input type="text" id="target-role-input" placeholder="Target role..." />
+          <button class="inline-gen-btn" id="btn-generate-improve">Go</button>
+        </div>
+        <button class="tool-item" id="btn-cover">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <line x1="16" y1="13" x2="8" y2="13"/>
+            <line x1="16" y1="17" x2="8" y2="17"/>
+          </svg>
+          Cover Letter
+        </button>
+      </div>
+    </div>
+
+    <div class="sidebar-footer">
+      <div class="footer-hint">Upload your resume to unlock all AI features</div>
+    </div>
+
+  </div>
+</aside>
+
+<!-- MAIN CHAT -->
+<main class="chat-main">
+  <div class="chat-container">
+
+    <!-- Welcome screen -->
+    <div class="welcome-screen" id="welcome-screen">
+      <div class="orb-glow"></div>
+      <div class="orb"></div>
+      <h1 class="welcome-heading">Your AI Career Coach</h1>
+      <p class="welcome-sub">Upload your resume or ask me anything about your career path.</p>
+      <div class="suggestion-grid">
+        <button class="suggestion-card" onclick="sendChip('Rate my resume from 1 to 10 and give detailed feedback')">
+          <div class="sc-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+          </div>
+          <div>
+            <div class="sc-title">Rate My Resume</div>
+            <div class="sc-desc">Score with actionable feedback</div>
+          </div>
+        </button>
+        <button class="suggestion-card" onclick="sendChip('What skills should I learn to get promoted faster in my field?')">
+          <div class="sc-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+              <polyline points="17 6 23 6 23 12"/>
+            </svg>
+          </div>
+          <div>
+            <div class="sc-title">Skills to Learn</div>
+            <div class="sc-desc">Get promoted with the right skills</div>
+          </div>
+        </button>
+        <button class="suggestion-card" onclick="sendChip('Which companies are hiring remote engineers right now?')">
+          <div class="sc-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="2" y1="12" x2="22" y2="12"/>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="sc-title">Remote Jobs</div>
+            <div class="sc-desc">Companies hiring remotely now</div>
+          </div>
+        </button>
+        <button class="suggestion-card" onclick="sendChip('Write a professional follow-up email after a job interview')">
+          <div class="sc-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </div>
+          <div>
+            <div class="sc-title">Follow-up Email</div>
+            <div class="sc-desc">Post-interview email template</div>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <div class="messages" id="messages"></div>
+
+    <div class="typing-indicator" id="typing-indicator" style="display:none">
+      <div class="msg-avatar ai-avatar">AI</div>
+      <div class="typing-dots"><span></span><span></span><span></span></div>
+    </div>
+
+  </div>
+
+  <!-- Input bar -->
+  <div class="chat-input-bar">
+    <div class="chat-input-wrap">
+      <div class="chat-input-inner">
+        <textarea id="chat-input" placeholder="Ask me anything about your career..." rows="1" maxlength="2000"></textarea>
+        <button class="send-btn" id="send-btn" aria-label="Send">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="22" y1="2" x2="11" y2="13"/>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="input-hint">CareerLens references your resume for personalized advice</div>
+  </div>
+</main>
+
+<!-- IMPROVE RESUME MODAL -->
+<div class="modal-backdrop" id="modal-improve" style="display:none">
+  <div class="modal modal-wide slide-down">
+    <div class="modal-header">
+      <div class="modal-title">AI-Improved Resume</div>
+      <button class="modal-close" onclick="closeModal('modal-improve')">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <div class="modal-body two-col">
+      <div class="col-original">
+        <div class="col-label">Original</div>
+        <div class="col-content" id="original-resume-preview"></div>
+      </div>
+      <div class="col-improved">
+        <div class="col-label">AI-Improved</div>
+        <div class="col-content markdown-output" id="improved-resume-output"></div>
+      </div>
+    </div>
+    <div class="modal-footer sticky-footer">
+      <button class="footer-btn" id="btn-copy-improve" onclick="copyContent('improved-resume-output', 'btn-copy-improve')">
+        Copy to Clipboard
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- COVER LETTER MODAL -->
+<div class="modal-backdrop" id="modal-cover" style="display:none">
+  <div class="modal slide-down" id="cover-modal-inner">
+
+    <div id="cover-form-view">
+      <div class="modal-header">
+        <div class="modal-title">Generate Cover Letter</div>
+        <button class="modal-close" onclick="closeModal('modal-cover')">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label class="form-label">Company Name</label>
+          <input type="text" id="company-name-input" class="form-input" placeholder="e.g. Stripe, Notion, Google" />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Job Description</label>
+          <textarea id="job-desc-input" class="form-textarea" placeholder="Paste the job description here..." rows="8"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="footer-btn footer-btn-primary full-width" id="btn-gen-cover" onclick="generateCoverLetter()">
+          Generate Cover Letter
+        </button>
+      </div>
+    </div>
+
+    <div id="cover-result-view" style="display:none">
+      <div class="modal-header">
+        <div class="modal-title">Your Cover Letter</div>
+        <div style="display:flex;gap:8px;align-items:center">
+          <button class="modal-back" onclick="showCoverForm()">Back</button>
+          <button class="modal-close" onclick="closeModal('modal-cover')">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="markdown-output" id="cover-letter-output"></div>
+      </div>
+      <div class="modal-footer sticky-footer">
+        <button class="footer-btn" id="btn-copy-cover" onclick="copyContent('cover-letter-output', 'btn-copy-cover')">
+          Copy to Clipboard
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="/static/app.js"></script>
+<script>
+/* Dev live-reload — polls /health and reloads the page when the server restarts */
+(function () {
+  let down = false;
+  setInterval(async () => {
+    try {
+      const r = await fetch('/health', { cache: 'no-store' });
+      if (r.ok && down) { down = false; location.reload(); }
+    } catch { down = true; }
+  }, 800);
+})();
+</script>
+</body>
+</html>
